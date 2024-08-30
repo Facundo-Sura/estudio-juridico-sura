@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "servidor para el estudio juridico Sura",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Facundo-Sura/estudio-juridico-sura.git"
+  },
+  "keywords": [
+    "estudio",
+    "juridico",
+    "sura",
+    "abogado",
+    "en",
+    "cordoba"
+  ],
+  "author": "Facundo Sura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Facundo-Sura/estudio-juridico-sura/issues"
+  },
+  "homepage": "https://github.com/Facundo-Sura/estudio-juridico-sura#readme"
+}
