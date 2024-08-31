@@ -8,7 +8,7 @@
 HTML
 CSS
 Tailwind CSS
-Next.Ts
+Next.js
 Javascript
 Typescript
 node.js
