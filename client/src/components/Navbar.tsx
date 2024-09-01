@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import logo from "@/assets/icono.png";
+import logo from "../../public/imagenes/icono.png";
 
 export default function Navbar() {
   return (
