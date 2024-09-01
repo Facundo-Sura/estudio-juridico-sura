@@ -2,6 +2,6 @@
 
 export default function Home() {
   return (
-    <main></main>
+    <main className="bg-white"></main>
   );
 }
