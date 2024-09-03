@@ -1,5 +1,5 @@
 import React from "react";
-import Landing from "./Landing";
+import Landing from "../components/Landing";
 import Navbar from "@/components/Navbar";
 
 export default function Home() {
