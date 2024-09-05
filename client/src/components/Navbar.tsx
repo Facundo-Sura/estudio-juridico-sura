@@ -7,11 +7,11 @@ import { pages } from "next/dist/build/templates/app-page";
 export default function Navbar() {
   return (
     <nav className="bg-white text-black flex flex-row justify-evenly justify-items-center items-center">
-      <Link href="/">
+      <Link href="/" className="flex items-center">
         <Image src={logo} alt="logo" className="m-1 p-1 h-36 w-36" />
         <h1 className="m-1 p-1 text-3xl font-bold">Estudio Juridico Sura </h1>
       </Link>
-      <menu>
+      <menu className="font-semibold">
         <Link href="/nosotros">
           <button className="hover:bg-gradient-to-r from-fuchsia-700 via-red-500 to-orange-600 hover:text-white rounded-md m-1 p-1 w-36 h-14">
             NOSOTROS
@@ -24,7 +24,7 @@ export default function Navbar() {
         </Link>
         <Link href="/agenda">
           <button className="hover:bg-gradient-to-r from-fuchsia-700 via-red-500 to-orange-600 hover:text-white rounded-md m-1 p-1 w-36 h-14">
-            AGENDA
+            AGENDAR
           </button>
         </Link>
         <Link href="/consulta">
