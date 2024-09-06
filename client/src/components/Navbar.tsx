@@ -2,13 +2,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../../public/imagenes/icono.png";
-import { pages } from "next/dist/build/templates/app-page";
 
 export default function Navbar() {
   return (
     <nav className="bg-white text-black flex flex-row justify-evenly justify-items-center items-center ">
       <Link href="/" className="flex items-center">
-        <Image src={logo} alt="logo" className="m-1 p-1 h-36 w-36" />
+        <Image src={logo} alt="logo" className="m-1 p-1 h-20 w-20" />
         <h1 className="m-1 p-1 text-3xl font-bold">Estudio Juridico Sura </h1>
       </Link>
       <menu className="font-semibold">

@@ -11,6 +11,7 @@ export default function Agenda() {
                 <input className="bg-black text-white w-2/5 p-4" type="mail" placeholder="Mail" />
                 <input className="bg-black text-white w-2/5 p-4" type="phone" placeholder="Telefono" />
                 <input className="bg-black text-white text-center w-2/5 p-4 " type="date" />
+                <input type="submit" value="Agendar cita" className="bg-black text-white p-4 hover:cursor-pointer" />
             </form>
         </div>
     )

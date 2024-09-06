@@ -5,7 +5,7 @@ export default function Nosotros() {
     return (
         <div>
             <Navbar />
-            <h1>Nuestro equipo esta compuesto por</h1>
+            <div></div>
         </div>
     )
 }
