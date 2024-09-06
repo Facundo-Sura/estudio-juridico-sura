@@ -1,18 +1,25 @@
-import Navbar from "@/components/Navbar";
-import React from "react";
+"use client";
+import Navbar from '@/components/Navbar';
+import { useEffect } from 'react';
 
-export default function Agenda() {
-    return (
-        <div>
-            <Navbar />
-            <form action="submit" className="bg-white text-black flex flex-col flex-nowrap justify-center items-center space-y-4 p-8">
-                <h1 className="text-2xl font-bold">Agenda un turno</h1>
-                <input className="bg-black text-white w-2/5 p-4" type="text" placeholder="Nombre y Apellido" />
-                <input className="bg-black text-white w-2/5 p-4" type="mail" placeholder="Mail" />
-                <input className="bg-black text-white w-2/5 p-4" type="phone" placeholder="Telefono" />
-                <input className="bg-black text-white text-center w-2/5 p-4 " type="date" />
-                <input type="submit" value="Agendar cita" className="bg-black text-white p-4 hover:cursor-pointer" />
-            </form>
-        </div>
-    )
-}
+const CalendlyWidget = () => {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://assets.calendly.com/assets/external/widget.js';
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
+
+  return (
+    <div>
+        <Navbar />
+      <div
+        className="calendly-inline-widget"
+        data-url="https://calendly.com/tu-url-de-calendly"
+        style={{ minWidth: '320px', height: '630px' }}
+      ></div>
+    </div>
+  );
+};
+
+export default CalendlyWidget;

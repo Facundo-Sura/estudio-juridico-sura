@@ -26,6 +26,7 @@ export default function Servicioe() {
         <li className="p-2">Laboral</li>
         <li className="p-2">Reales</li>
         <li className="p-2">Suseciones</li>
+        <li className="p-2">Violencia de genero</li>
       </ol>
     </div>
   );
