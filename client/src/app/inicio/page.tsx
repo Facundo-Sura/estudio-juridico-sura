@@ -31,7 +31,7 @@ export default function Inicio() {
 
       {/* Navbar */}
       <div
-        className={`fixed top-0 left-0 w-full z-20 transition-opacity ${
+        className={`transition-opacity ${
           scrollPosition < 600 ? "opacity-0" : "opacity-100 "
         }`}
       >
@@ -60,7 +60,6 @@ export default function Inicio() {
           <h2 className="text-center font-bold text-2xl font-sans m-8 p-4">¿En qué podemos ayudarte?</h2>
           <div className="grid grid-cols-2 gap-4 justify-items-center">
             <div className="border-2 border-black w-2/3 h-64">
-            <img src="public/imagenes/administrativo.jpg" alt="" />
               <h3>Administrativo</h3>
               <p></p>
             </div>
