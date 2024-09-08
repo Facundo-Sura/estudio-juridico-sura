@@ -31,7 +31,7 @@ export default function Inicio() {
 
       {/* Navbar */}
       <div
-        className={`fixed top-0 left-0 w-full z-20 transition-opacity ${
+        className={`transition-opacity ${
           scrollPosition < 600 ? "opacity-0" : "opacity-100 "
         }`}
       >
