@@ -5,7 +5,7 @@ export default function Servicioe() {
   return (
     <div className="bg-white text-black">
       <Navbar />
-      <h1 className="text-center p-8">SERVICIOS</h1>
+      <h1 className="text-center m-20 p-8">SERVICIOS</h1>
       <p className="px-64 ">
         Ofrecemos un trato personalizado para atender las necesidades de
         nuestros clientes. Ponemos a disposición entrevistas presenciales y

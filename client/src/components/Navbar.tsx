@@ -5,7 +5,7 @@ import logo from "../../public/imagenes/icono.png";
 
 export default function Navbar() {
   return (
-    <nav className="bg-white text-black flex flex-row justify-evenly justify-items-center items-center ">
+    <nav className="fixed top-0 left-0 w-full z-20 bg-white text-black flex flex-row justify-evenly justify-items-center items-center ">
       <Link href="/" className="flex items-center">
         <Image src={logo} alt="logo" className="m-1 p-1 h-20 w-20" />
         <h1 className="m-1 p-1 text-3xl font-bold">Estudio Juridico Sura </h1>

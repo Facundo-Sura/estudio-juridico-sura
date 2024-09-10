@@ -3,9 +3,9 @@ import Navbar from "@/components/Navbar";
 
 export default function Consulta() {
   return (
-    <div >
+    <div className="bg-white text-black">
       <Navbar />
-      <form action="submit" className="bg-white text-black flex flex-col flex-nowrap justify-center items-center space-y-4 p-8">
+      <form action="submit" className="p-32 flex flex-col flex-nowrap justify-center items-center space-y-4">
         <h2 className="text-black text-2xl font-bold">CONSULTA</h2>
         <input className="p-4 w-2/5 text-base bg-black" type="text" placeholder="Nombre y Apellido" />
         <input className="p-4 w-2/5 text-base bg-black" type="mail" placeholder="Mail" />
