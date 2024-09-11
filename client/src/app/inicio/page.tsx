@@ -5,6 +5,7 @@ import Landing from "@/components/Landing";
 
 export default function Inicio() {
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [textOpasity, setTextOpacity] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -63,34 +64,83 @@ export default function Inicio() {
             ¿En qué podemos ayudarte?
           </h2>
           <div className="grid grid-cols-2 gap-4 justify-items-center">
-            <div className="bg-[url('/imagenes/da.jpg')] bg-cover bg-center text-white text-center p-20 w-2/3 h-64 hover:p-5 duration-1000">
-              <h3 className="text-4xl underline">Administrativo</h3>
-              <p>
-                es la rama del Derecho público que regula la organización,
-                funcionamiento, poderes y deberes de la administración pública y
-                las consiguientes relaciones jurídicas entre la misma y otros
-                sujetos.
-              </p>
+            <div className="bg-[url('/imagenes/da.jpg')] bg-cover bg-center text-white text-center p-20 w-2/3 h-64 relative overflow-hidden hover:p-5 duration-1000 group">
+              <h3 className="text-4xl underline relative z-20 transition-transform duration-1000 group-hover:translate-y-[-10px]">
+                Administrativo
+              </h3>
+              <div className="absolute inset-0 bg-black bg-opacity-50 m-2 flex items-center justify-center transition-all duration-1000 opacity-0 translate-y-full group-hover:translate-y-0 group-hover:opacity-100 z-10">
+                <p className="p-2">
+                  Es la rama del Derecho público que regula la organización,
+                  funcionamiento, poderes y deberes de la administración pública
+                  y las consiguientes relaciones jurídicas entre la misma y
+                  otros sujetos.
+                </p>
+              </div>
             </div>
-            <div className="bg-[url('/imagenes/dc.jpg')] bg-cover bg-center text-white text-center p-20 w-2/3 h-64 hover:p-5 duration-1000">
-              <h3 className="text-4xl underline">Civil</h3>
-              <p></p>
+            <div className="bg-[url('/imagenes/dc.jpg')] bg-cover bg-center text-white text-center p-20 w-2/3 h-64 relative overflow-hidden hover:p-5 duration-1000 group">
+              <h3 className="text-4xl underline relative z-20 transition-transform duration-1000 group-hover:translate-y-[-10px]">
+                Civil
+              </h3>
+              <div className="absolute inset-0 bg-black bg-opacity-50 m-2 flex items-center justify-center transition-all duration-1000 opacity-0 translate-y-full group-hover:translate-y-0 group-hover:opacity-100 z-10">
+                <p className="p-2">
+                  Es la rama del derecho que, en general, regula las relaciones
+                  civiles o privadas de las personas. Es una de las ramas más
+                  antiguas del derecho.
+                </p>
+              </div>
             </div>
-            <div className="bg-[url('/imagenes/df.jpg')] bg-cover bg-center text-white text-center p-20 w-2/3 h-64 hover:p-5 duration-1000">
-              <h3 className="text-4xl underline">Familia</h3>
-              <p></p>
+            <div className="bg-[url('/imagenes/df.jpg')] bg-cover bg-center text-white text-center p-20 w-2/3 h-64 relative overflow-hidden hover:p-5 duration-1000 group">
+              <h3 className="text-4xl underline relative z-20 transition-transform duration-1000 group-hover:translate-y-[-10px]">
+                Familia
+              </h3>
+              <div className="absolute inset-0 bg-black bg-opacity-50 m-2 flex items-center justify-center transition-all duration-1000 opacity-0 translate-y-full group-hover:translate-y-0 group-hover:opacity-100 z-10">
+                <p className="p-2">
+                  Es el conjunto de normas e instituciones jurídicas que regulan
+                  las relaciones personales y patrimoniales de los miembros que
+                  integran la familia.
+                </p>
+              </div>
             </div>
-            <div className="bg-[url('/imagenes/dl.jpg')] bg-cover bg-center text-white text-center p-20 w-2/3 h-64 hover:p-5 duration-1000">
-              <h3 className="text-4xl underline">Labral</h3>
-              <p></p>
+            <div className="bg-[url('/imagenes/dl.jpg')] bg-cover bg-center text-white text-center p-20 w-2/3 h-64 relative overflow-hidden hover:p-5 duration-1000 group">
+              <h3 className="text-4xl underline relative z-20 transition-transform duration-1000 group-hover:translate-y-[-10px]">
+                Labral
+              </h3>
+              <div className="absolute inset-0 bg-black bg-opacity-50 m-2 flex items-center justify-center transition-all duration-1000 opacity-0 translate-y-full group-hover:translate-y-0 group-hover:opacity-100 z-10">
+                <p className="p-2">
+                  Es una rama del Derecho cuyos principios y normas jurídicas
+                  tienen por objeto la tutela del trabajo humano realizado en
+                  forma libre, por cuenta ajena, en relación de dependencia y a
+                  cambio de una contraprestación.
+                </p>
+              </div>
             </div>
-            <div className="bg-[url('/imagenes/dr.jpg')] bg-cover bg-center text-white text-center p-20 w-2/3 h-64 hover:p-5 duration-1000">
-              <h3 className="text-4xl underline">Reales</h3>
-              <p></p>
+            <div className="bg-[url('/imagenes/dr.jpg')] bg-cover bg-center text-white text-center p-20 w-2/3 h-64 relative overflow-hidden hover:p-5 duration-1000 group">
+              <h3 className="text-4xl underline relative z-20 transition-transform duration-1000 group-hover:translate-y-[-10px]">
+                Reales
+              </h3>
+              <div className="absolute inset-0 bg-black bg-opacity-50 m-2 flex items-center justify-center transition-all duration-1000 opacity-0 translate-y-full group-hover:translate-y-0 group-hover:opacity-100 z-10">
+                <p className="p-2">
+                  Es un poder jurídico que ejerce una persona sobre una cosa;
+                  regula la Propiedad, y los derechos y obligaciones
+                  concernientes a la propiedad. Este poder puede ser directo e
+                  inmediato o indirecto y mediato, y puede suponer un
+                  aprovechamiento total o parcial, siendo este derecho oponible
+                  a terceros.
+                </p>
+              </div>
             </div>
-            <div className="bg-[url('/imagenes/ds.jpg')] bg-cover bg-center text-white text-center p-20 w-2/3 h-64 hover:p-5 duration-1000">
-              <h3 className="text-4xl underline">Sucesiones</h3>
-              <p></p>
+            <div className="bg-[url('/imagenes/ds.jpg')] bg-cover bg-center text-white text-center p-20 w-2/3 h-64 relative overflow-hidden hover:p-5 duration-1000 group">
+              <h3 className="text-4xl underline relative z-20 transition-transform duration-1000 group-hover:translate-y-[-10px]">
+                Sucesiones
+              </h3>
+              <div className="absolute inset-0 bg-black bg-opacity-50 m-2 flex items-center justify-center transition-all duration-1000 opacity-0 translate-y-full group-hover:translate-y-0 group-hover:opacity-100 z-10">
+                <p className="p-2">
+                  Es aquella parte del derecho privado que regula la sucesión
+                  mortis causa y determina el destino de las titularidades y
+                  relaciones jurídicas tanto activas como pasivas de una persona
+                  después de su muerte.​
+                </p>
+              </div>
             </div>
           </div>
         </div>
