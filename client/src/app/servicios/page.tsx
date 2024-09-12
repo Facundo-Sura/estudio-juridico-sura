@@ -49,7 +49,7 @@ export default function Servicioe() {
         "Reclamo de prestación alimentaria e incidentes de aumento de prestaciones alimentarias.",
         "Responsabilidad subsidiaria y complementaria de abuelos.",
       ],
-    }, // No tiene contenido
+    },
     {
       title: "+ Laboral",
       content: [
@@ -92,24 +92,28 @@ export default function Servicioe() {
           tus problemas.
         </p>
         <ol className="px-64 py-8">
-      {sections.map((section, index) => (
-        <li
-          key={index}
-          className="bg-gray-400 hover:bg-gray-900 hover:text-white cursor-pointer p-2"
-          onClick={() => toggleList(index)} // Cambia la lista activa
-        >
-          {section.title}
-          {/* Si la lista está activa, se muestra el contenido */}
-          {section.content.length > 0 && (
-            <ol className={`${activeIndex === index ? 'block' : 'hidden'} ml-4 mt-2 list-disc`}>
-              {section.content.map((item, i) => (
-                <li key={i}>{item}</li>
-              ))}
-            </ol>
-          )}
-        </li>
-      ))}
-    </ol>
+          {sections.map((section, index) => (
+            <li
+              key={index}
+              className="bg-gray-400 hover:bg-gray-900 hover:text-white cursor-pointer p-2"
+              onClick={() => toggleList(index)} // Cambia la lista activa
+            >
+              {section.title}
+              {/* Si la lista está activa, se muestra el contenido */}
+              {section.content.length > 0 && (
+                <ol
+                  className={`${
+                    activeIndex === index ? "block" : "hidden"
+                  } ml-4 mt-2 list-disc`}
+                >
+                  {section.content.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ol>
+              )}
+            </li>
+          ))}
+        </ol>
       </div>
     </div>
   );
