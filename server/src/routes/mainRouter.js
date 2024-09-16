@@ -1,8 +1,8 @@
-const {Router} = require("express")
+const { Router } = require("express");
+const contactRouter = require("./contactRouter");
 
-const mainRouter = Router()
-mainRouter.get("/", (req, res) => {
-    res.status(200).send('estas en el home')
-})
+const mainRouter = Router();
+
+mainRouter.use("/contact", contactRouter);
 
 module.exports = mainRouter;
