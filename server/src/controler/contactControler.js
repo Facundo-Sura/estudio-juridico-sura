@@ -1,9 +1,10 @@
 require("dotenv").config();
 const nodemailer = require("nodemailer");
+const template = require("../templates/emailTemplate")
 
 const { EMAIL_USER, EMAIL_PASS, EMAIL_RECEIVER } = process.env;
 
-const consulta = async (fullname, email, phone, subject, message) => {
+const consulta = async (name, email, phone, subject, message) => {
   const transporter = nodemailer.createTransport({
     service: "Gmail",
     auth: {
@@ -16,13 +17,8 @@ const consulta = async (fullname, email, phone, subject, message) => {
     from: email,
     phone: phone,
     to: EMAIL_USER,
-    subject: `Nuevo mensaje de ${fullname}`,
-    text: `
-    telefone: ${phone}
-    asunto: ${subject}
-    mensaje: ${message}
-    email: ${email}
-    `,
+    subject: `Nuevo mensaje de ${name}`,
+    html: template(email, phone, subject, message),
   };
 
   await transporter.sendMail(mailOptions);

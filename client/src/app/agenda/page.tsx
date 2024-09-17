@@ -14,7 +14,7 @@ const CalendlyWidget = () => {
     <div>
         <Navbar />
       <div
-        className="calendly-inline-widget"
+        className="calendly-inline-widget mt-10"
         data-url="https://calendly.com/tu-url-de-calendly"
         style={{ minWidth: '320px', height: '630px' }}
       ></div>

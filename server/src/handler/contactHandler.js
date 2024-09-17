@@ -1,9 +1,9 @@
 const consulta = require("../controler/contactControler");
 
 const contactHandler = async (req, res) => {
-  const { fullname, email, phone, subject, message } = req.body;
+  const { name, email, phone, subject, message } = req.body;
 
-  if (!fullname || !email || !phone || !subject || !message) {
+  if (!name || !email || !phone || !subject || !message) {
     return res
       .status(400)
       .json({ success: false, error: "Todos los campos son requeridos" });
@@ -11,7 +11,7 @@ const contactHandler = async (req, res) => {
 
   try {
     await consulta(
-      fullname,
+      name,
       email,
       phone,
       subject,
@@ -19,7 +19,7 @@ const contactHandler = async (req, res) => {
     );
     res
       .status(200)
-      .json({ success: true, message: "Correo enviado con éxito" });
+      .json({ success: true, message: "Correo enviado con éxito" })
   } catch (error) {
     return res.status(500).json({ success: false, error: error.message });  
   }
