@@ -15,7 +15,7 @@ const CalendlyWidget = () => {
         <Navbar />
       <div
         className="calendly-inline-widget mt-10 bg-white"
-        data-url="https://calendly.com/estudiojuridicosura02"
+        data-url="https://calendly.com/estudiojuridicosura"
         style={{ minWidth: '100%', height: '680px' }}
       ></div>
     </div>
