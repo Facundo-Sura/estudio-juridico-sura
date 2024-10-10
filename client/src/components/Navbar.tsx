@@ -31,22 +31,22 @@ const Navbar: React.FC<NavbarProps> = ({ showFullNavbar }) => {
         } gap-4`}
       >
         <Link href="/nosotros">
-          <button className={showFullNavbar ? "m-1 p-1 w-36 h-14 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-gray-500 duration-300" : "relative m-1 p-1 w-36 h-14 hover:text-blue-400 transition-colors duration-300"}>
+          <button className={showFullNavbar ? "m-1 p-1 w-36 h-14 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-white duration-300" : "relative m-1 p-1 w-36 h-14 hover:text-blue-400 transition-colors duration-300"}>
               NOSOTROS
           </button>
         </Link>
         <Link href="/servicios">
-          <button className={showFullNavbar ? "m-1 p-1 w-36 h-14 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-gray-500 duration-300" : "relative m-1 p-1 w-36 h-14 hover:text-blue-400 transition-colors duration-300"}>
+          <button className={showFullNavbar ? "m-1 p-1 w-36 h-14 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-white duration-300" : "relative m-1 p-1 w-36 h-14 hover:text-blue-400 transition-colors duration-300"}>
               SERVICIOS
           </button>
         </Link>
         <Link href="/agenda">
-          <button className={showFullNavbar ? "m-1 p-1 w-36 h-14 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-gray-500 duration-300" : "relative m-1 p-1 w-36 h-14 hover:text-blue-400 transition-colors duration-300"}>
+          <button className={showFullNavbar ? "m-1 p-1 w-36 h-14 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-white duration-300" : "relative m-1 p-1 w-36 h-14 hover:text-blue-400 transition-colors duration-300"}>
               AGENDAR
           </button>
         </Link>
         <Link href="/consulta">
-          <button className={showFullNavbar ? "m-1 p-1 w-36 h-14 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-gray-500 duration-300" : "relative m-1 p-1 w-36 h-14 hover:text-blue-400 transition-colors duration-300"}>
+          <button className={showFullNavbar ? "m-1 p-1 w-36 h-14 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-white duration-300" : "relative m-1 p-1 w-36 h-14 hover:text-blue-400 transition-colors duration-300"}>
               CONSULTA
           </button>
         </Link>
