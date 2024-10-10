@@ -38,14 +38,14 @@ export default function Inicio() {
       {/* Contenido debajo del video */}
       <div className="relative z-10 p-8">
         <div>
-          <div className="flex justify-center items-center bg-gray-100 rounded-2xl p-20">
+          <div className="flex justify-center items-center bg-gray-100 rounded-3xl p-0">
             <p className="text-center text-base font-light m-8 p-10 w-1/2">
               Bienvenidos a Estudio Juridico Sura, donde la experiencia y la
               excelencia se unen para brindar soluciones integrales en el ámbito
               legal. Somos un grupo de profesionales altamente capacitados,
               compuesto por expertos en diversas áreas del derecho.
             </p>
-            <video autoPlay loop muted className="h-80 rounded-2xl">
+            <video autoPlay loop muted className="h-80 rounded-e-3xl">
               <source src="/videos/bienvenido.mp4" />
             </video>
           </div>
@@ -53,18 +53,21 @@ export default function Inicio() {
             <h2 className="text-center font-bold text-2xl font-sans m-4 p-10">
               ASESORAMIENTO PROFESIONAL
             </h2>
-            <p className="text-center text-base font-light mx-8 py-4 p-20">
-              Comprendemos que cada situación legal es única, y trabajamos en
-              estrecha colaboración con nuestros clientes para encontrar la
-              mejor solución posible, siempre con el mayor cuidado y atención.
-              Nuestra filosofía nos ha permitido ganar una reputación sólida
-              como uno de los estudios de abogados más confiables y efectivos en
-              nuestra área de práctica. Nos encantaría poder ayudarte en
-              cualquier situación legal que puedas enfrentar. Agendá una cita
-              con nosotros
-            </p>
+            <div className="flex justify-center items-center">
+              <img src="/imagenes/ap.jpg" alt="asesoramiento profesional" className="h-80 rounded-s-3xl" />
+              <p className="text-center text-base font-light w-1/2 mx-8 py-4 p-10">
+                Comprendemos que cada situación legal es única, y trabajamos en
+                estrecha colaboración con nuestros clientes para encontrar la
+                mejor solución posible, siempre con el mayor cuidado y atención.
+                Nuestra filosofía nos ha permitido ganar una reputación sólida
+                como uno de los estudios de abogados más confiables y efectivos
+                en nuestra área de práctica. Nos encantaría poder ayudarte en
+                cualquier situación legal que puedas enfrentar. Agendá una cita
+                con nosotros
+              </p>
+            </div>
           </div>
-          <div className="my-4 p-1 text-center">
+          <div className="mt-52 p-1 text-center">
             <Link
               href="/nosotros"
               className="relative border-2 border-solid border-black p-5 hover:translate-x-6 hover:bg-slate-400 hover:bg-opacity-30 transition-all duration-300 ease-in-out before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px] before:bg-black before:scale-x-0 hover:before:scale-x-100 before:origin-left before:transition-transform before:duration-1000"
