@@ -9,9 +9,9 @@ export default function Nosotros() {
       <Navbar showFullNavbar={true} />
       <div className="bg-white text-black">
         <div className="bg-[url('/imagenes/fontpage.jpg')] bg-cover bg-center h-full w-full my-20 py-44">
-          <h1 className="text-4xl text-white text-center">Nosotros</h1>
+          <h1 className="text-4xl text-white text-center hover:text-slate-400 hover:cursor-pointer">Nosotros</h1>
         </div>
-        <p className="px-44">
+        <p className="text-center h-40 w-11/12 mx-auto py-6 px-44 shadow-2xl border-2 border-r-slate-400 rounded-3xl">
           Somos un estudio jurídico donde el ejercicio del derecho no es sólo
           una profesión, sino una vocación. Abordamos cada caso garantizando un
           enfoque integrado y preventivo, con el compromiso y la responsabilidad
