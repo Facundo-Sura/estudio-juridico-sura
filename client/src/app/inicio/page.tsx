@@ -38,7 +38,7 @@ export default function Inicio() {
       {/* Contenido debajo del video */}
       <div className="relative z-10 p-8">
         <div>
-          <div className="flex justify-center items-center bg-gray-100 rounded-3xl p-0">
+          <div className="flex justify-center items-center bg-gray-100 rounded-3xl p-0 shadow-xl">
             <p className="text-center text-base font-light m-8 p-10 w-1/2">
               Bienvenidos a Estudio Juridico Sura, donde la experiencia y la
               excelencia se unen para brindar soluciones integrales en el ámbito
@@ -53,9 +53,9 @@ export default function Inicio() {
             <h2 className="text-center font-bold text-2xl font-sans m-4 p-10">
               ASESORAMIENTO PROFESIONAL
             </h2>
-            <div className="flex justify-center items-center">
-              <img src="/imagenes/ap.jpg" alt="asesoramiento profesional" className="h-80 rounded-s-3xl" />
-              <p className="text-center text-base font-light w-1/2 mx-8 py-4 p-10">
+            <div className="flex justify-center items-center border-2 rounded-3xl p-0 border-l-stone-400 shadow-xl">
+              <img src="/imagenes/ap.jpg" alt="asesoramiento profesional" className="w-1/2 h-80 rounded-s-3xl" />
+              <p className="text-center w-1/2 mx-8 py-4 p-10">
                 Comprendemos que cada situación legal es única, y trabajamos en
                 estrecha colaboración con nuestros clientes para encontrar la
                 mejor solución posible, siempre con el mayor cuidado y atención.
