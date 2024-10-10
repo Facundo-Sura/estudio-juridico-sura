@@ -12,6 +12,7 @@ export default function Footer() {
         <h2 className="m-1 p-1 text-xl">telefono</h2>
         <h2 className="m-1 p-1 text-xl">estudiojuridicosura02@gmail.com</h2>
       </main>
+      <hr />
       <h4 className="m-6 p-4 flex justify-center items-center">
         Copyright 2024{" "}
         <Image src={copy} alt="copyright" className="h-4 w-4 m-1" /> | Powered
