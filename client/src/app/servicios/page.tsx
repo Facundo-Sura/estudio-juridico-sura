@@ -73,7 +73,7 @@ export default function Servicioe() {
 
   return (
     <div>
-      <Navbar />
+      <Navbar showFullNavbar={true} />
       <div className="bg-white text-black">
         <div className="bg-[url('/imagenes/fontpage.jpg')] bg-cover bg-center h-full w-full my-20 py-44">
           <h1 className="text-4xl text-white text-center">Servicios</h1>

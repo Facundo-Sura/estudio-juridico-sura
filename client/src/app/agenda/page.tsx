@@ -12,7 +12,7 @@ const CalendlyWidget = () => {
 
   return (
     <div>
-        <Navbar />
+        <Navbar showFullNavbar={true} />
       <div
         className="calendly-inline-widget mt-10 bg-white"
         data-url="https://calendly.com/estudiojuridicosura"

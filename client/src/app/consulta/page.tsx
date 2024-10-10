@@ -54,7 +54,7 @@ export default function Consulta() {
 
   return (
     <div className="bg-white text-black">
-      <Navbar />
+      <Navbar showFullNavbar={true} />
       <div className="grid grid-cols-2">
         <form
           onSubmit={handleSubmit}

@@ -6,7 +6,6 @@ import Landing from "@/components/Landing";
 
 export default function Inicio() {
   const [scrollPosition, setScrollPosition] = useState(0);
-  const [textOpasity, setTextOpacity] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,12 +31,8 @@ export default function Inicio() {
       </div>
 
       {/* Navbar */}
-      <div
-        className={`transition-opacity ${
-          scrollPosition < 10 ? "opacity-0" : "opacity-100 duration-1000"
-        }`}
-      >
-        <Navbar />
+      <div className={`transition-opacity duration-1000`}>
+        <Navbar showFullNavbar={scrollPosition > 500} />
       </div>
 
       {/* Contenido debajo del video */}
