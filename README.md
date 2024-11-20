@@ -6,13 +6,9 @@
 
 ```
 HTML
-CSS
 Tailwind CSS
 Next.js
 Javascript
 Typescript
 node.js
-React.js
-Sequelize
-Postgre SQL
 ```
