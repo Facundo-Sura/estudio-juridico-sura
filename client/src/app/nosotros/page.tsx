@@ -15,8 +15,8 @@ export default function Nosotros() {
         <div className="p-10 flex justify-center items-center">
           <Image src={SGM} alt="Sura Norma Gladys" className="h-fit" />
           <div className="m-8 p-8 shadow-2xl border-2 border-r-slate-400 rounded-3xl">
-            <h1 className="m-8 text-3xl font-bold"><a href="" target="blank">Gladys sura</a></h1>
-            <h2 className="m-8 text-xl"><a href="" target="blank">Abogada - Escribana - Grafóloga</a></h2>
+            <h1 className="m-8 text-3xl font-bold"><a href="https://sites.google.com/view/estudiosura/estudio-jur%C3%ADdico" target="blank">Gladys sura</a></h1>
+            <h2 className="m-8 text-xl"><a href="https://sites.google.com/view/estudiosura/estudio-jur%C3%ADdico" target="blank">Abogada - Escribana - Grafóloga</a></h2>
             <h6 className="m-8 font-light">
               Matrícula Provincial N° 1-41.031
             </h6>

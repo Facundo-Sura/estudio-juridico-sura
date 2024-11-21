@@ -1,6 +1,5 @@
 "use client";
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Location from "@/components/Location";
 
@@ -24,16 +23,16 @@ export default function Consulta() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
+  
     try {
-      const response = await fetch("http://localhost:3001/contact", {
+      const response = await fetch("/api/sendEmail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
-
+  
       if (response.ok) {
         alert("Se ha enviado su consulta");
         setFormData({
@@ -43,14 +42,16 @@ export default function Consulta() {
           subject: "",
           message: "",
         });
-        window.location.href = 'http://localhost:3000/'
       } else {
-        alert("No se ha enviar su consulta");
+        const errorData = await response.json();
+        alert(`Error: ${errorData.error}`);
       }
     } catch (error) {
-      console.error("Eror al enviar el mensaje:", error);
+      console.error("Error al enviar la consulta:", error);
+      alert("Error al enviar la consulta.");
     }
   };
+  
 
   return (
     <div className="bg-white text-black">
@@ -61,7 +62,7 @@ export default function Consulta() {
           className="p-32 flex flex-col flex-nowrap justify-center items-center space-y-4"
         >
           <h2 className="text-black text-2xl font-bold">
-            Contactacte con nosotros
+            Contáctese con nosotros
           </h2>
           <p>Nuestros Horarios: Lunes a Viernes de 09:00 a 13:00hs</p>
           <input
