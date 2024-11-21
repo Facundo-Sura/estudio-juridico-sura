@@ -130,7 +130,7 @@ export default function Servicioe() {
         <div className="bg-[url('/imagenes/fontpage.jpg')] bg-cover bg-center h-full w-full my-20 py-44">
           <h1 className="text-4xl text-white text-center hover:text-slate-400 hover:cursor-pointer">Servicios</h1>
         </div>
-        <p className="text-center h-46 w-11/12 mx-auto py-6 px-44 shadow-2xl border-2 border-r-slate-400 rounded-3xl">
+        <p className="text-center h-fit w-2/3 mx-auto py-6 px-20 shadow-2xl border-2 border-r-slate-400 rounded-3xl">
           Ofrecemos un trato personalizado para atender las necesidades de
           nuestros clientes. Ponemos a disposición entrevistas presenciales y
           virtuales, asesorías online pre y post sentencia, y mediaciones.
