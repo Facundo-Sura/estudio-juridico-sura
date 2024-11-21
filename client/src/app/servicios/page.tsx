@@ -13,7 +13,20 @@ export default function Servicioe() {
   };
 
   const sections = [
-    { title: "+ Administrativo", content: [] }, // No tiene contenido
+    {
+      title: "+ Administrativo", content: [
+        "Responsabilidad del Estado y demandas por daños.",
+        "Procesos administrativos sancionadores.",
+        "Impugnación de actos administrativos.",
+        "Reclamos por falta de prestación de servicios públicos.",
+        "Obtención y renovación de licencias y habilitaciones.",
+        "Asesoramiento en contratos administrativos y licitaciones.",
+        "Defensa en procedimientos de expropiación.",
+        "Gestión de subsidios y beneficios estatales.",
+        "Amparos por mora administrativa.",
+        "Defensa en procesos de responsabilidad patrimonial.",
+      ]
+    },
     {
       title: "+ Civil",
       content: [
@@ -66,9 +79,48 @@ export default function Servicioe() {
         "Despido indirecto.",
       ],
     },
-    { title: "+ Reales", content: [] },
-    { title: "+ Sucesiones", content: [] },
-    { title: "+ Violencia de género", content: [] },
+    {
+      title: "+ Reales", content: [
+        "Acciones de reivindicación y protección de la posesión.",
+        "Constitución y extinción de usufructos y servidumbres.",
+        "Juicios por daños a la propiedad.",
+        "Regulación y conflictos sobre medianería.",
+        "Resolución de disputas por límites territoriales.",
+        "Usucapión y regularización dominial.",
+        "Constitución y ejecución de hipotecas.",
+        "Asesoramiento en fideicomisos inmobiliarios.",
+        "Reclamos por accesión y mejoras en inmuebles.",
+        "Protección de derechos reales en bienes muebles e inmuebles.",
+      ]
+    },
+    {
+      title: "+ Sucesiones", content: [
+        "Tramitación de sucesiones testamentarias y ab intestato.",
+        "Ejecución y contestación de testamentos.",
+        "Asesoramiento en herencias internacionales.",
+        "Declaratorias de herederos judiciales y extrajudiciales.",
+        "Resolución de conflictos entre coherederos.",
+        "Liquidación y partición de bienes hereditarios.",
+        "Administración de bienes en indivisión.",
+        "Análisis y prevención de fraudes testamentarios.",
+        "Sucesiones vacantes y reclamos de acreedores.",
+        "Asistencia en donaciones anticipadas y pactos sucesorios.",
+      ]
+    },
+    {
+      title: "+ Violencia de género", content: [
+        "Solicitudes de medidas de protección y restricción.",
+        "Asesoramiento en denuncias por violencia doméstica.",
+        "Acompañamiento legal en procesos penales por violencia de género.",
+        "Representación en casos de violencia psicológica y económica.",
+        "Asistencia en procesos por abuso sexual y acoso.",
+        "Tramitación de órdenes de exclusión del hogar.",
+        "Acciones legales por incumplimiento de medidas cautelares.",
+        "Defensa de derechos en casos de discriminación por género.",
+        "Asesoramiento en violencia digital y ciberacoso.",
+        "Reclamos por incumplimiento de derechos laborales por cuestiones de género.",
+      ]
+    },
   ];
 
   return (
@@ -102,9 +154,8 @@ export default function Servicioe() {
               {/* Si la lista está activa, se muestra el contenido */}
               {section.content.length > 0 && (
                 <ol
-                  className={`${
-                    activeIndex === index ? "block" : "hidden"
-                  } ml-4 mt-2 list-disc`}
+                  className={`${activeIndex === index ? "block" : "hidden"
+                    } ml-4 mt-2 list-disc`}
                 >
                   {section.content.map((item, i) => (
                     <li key={i}>{item}</li>
