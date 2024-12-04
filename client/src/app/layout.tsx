@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Estudio Juridico Sura",
-  description: "Estudio Juridico Cordoba - Alta Gracia",
+  description: "Estudio Juridico Cordoba - Alta Gracia, Estudio Juridico Neuquen"
 };
 
 export default function RootLayout({

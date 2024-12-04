@@ -23,9 +23,8 @@ export default function Home() {
     <div className="relative">
       {/* Video de fondo */}
       <div
-        className={`relative w-full h-screen transition-opacity duration-100 ${
-          scrollPosition > 500 ? "opacity-0" : "opacity-100"
-        }`}
+        className={`relative w-full h-screen transition-opacity duration-100 ${scrollPosition > 500 ? "opacity-0" : "opacity-100"
+          }`}
       >
         <Landing />
       </div>
@@ -93,7 +92,7 @@ export default function Home() {
                 <div className="p-5 text-center">
                   <Link
                     href="/servicios"
-                    className="border-2 border-solid border-white p-3 transition-all hover:bg-slate-400  hover:bg-opacity-30 duration-1000"
+                    className="relative border-2 border-solid border-white p-5 hover:translate-x-6 hover:bg-slate-400 hover:bg-opacity-30 transition-all duration-300 ease-in-out before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px] before:bg-white before:scale-x-0 hover:before:scale-x-100 before:origin-left before:transition-transform before:duration-1000"
                   >
                     Saber mas
                   </Link>
@@ -113,7 +112,7 @@ export default function Home() {
                 <div className="p-5 text-center">
                   <Link
                     href="/servicios"
-                    className="border-2 border-solid border-white p-3 transition-all hover:bg-slate-400  hover:bg-opacity-30 duration-1000"
+                    className="relative border-2 border-solid border-white p-5 hover:translate-x-6 hover:bg-slate-400 hover:bg-opacity-30 transition-all duration-300 ease-in-out before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px] before:bg-white before:scale-x-0 hover:before:scale-x-100 before:origin-left before:transition-transform before:duration-1000"
                   >
                     Saber mas
                   </Link>
@@ -133,7 +132,7 @@ export default function Home() {
                 <div className="p-5 text-center">
                   <Link
                     href="/servicios"
-                    className="border-2 border-solid border-white p-3 transition-all hover:bg-slate-400  hover:bg-opacity-30 duration-1000"
+                    className="relative border-2 border-solid border-white p-5 hover:translate-x-6 hover:bg-slate-400 hover:bg-opacity-30 transition-all duration-300 ease-in-out before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px] before:bg-white before:scale-x-0 hover:before:scale-x-100 before:origin-left before:transition-transform before:duration-1000"
                   >
                     Saber mas
                   </Link>
@@ -154,7 +153,7 @@ export default function Home() {
                 <div className="p-5 text-center">
                   <Link
                     href="/servicios"
-                    className="border-2 border-solid border-white p-3 transition-all hover:bg-slate-400  hover:bg-opacity-30 duration-1000"
+                    className="relative border-2 border-solid border-white p-5 hover:translate-x-6 hover:bg-slate-400 hover:bg-opacity-30 transition-all duration-300 ease-in-out before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px] before:bg-white before:scale-x-0 hover:before:scale-x-100 before:origin-left before:transition-transform before:duration-1000"
                   >
                     Saber mas
                   </Link>
@@ -177,7 +176,7 @@ export default function Home() {
                 <div className="p-5 text-center">
                   <Link
                     href="/servicios"
-                    className="border-2 border-solid border-white p-3 transition-all hover:bg-slate-400  hover:bg-opacity-30 duration-1000"
+                    className="relative border-2 border-solid border-white p-5 hover:translate-x-6 hover:bg-slate-400 hover:bg-opacity-30 transition-all duration-300 ease-in-out before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px] before:bg-white before:scale-x-0 hover:before:scale-x-100 before:origin-left before:transition-transform before:duration-1000"
                   >
                     Saber mas
                   </Link>
@@ -193,12 +192,12 @@ export default function Home() {
                   Es aquella parte del derecho privado que regula la sucesión
                   mortis causa y determina el destino de las titularidades y
                   relaciones jurídicas tanto activas como pasivas de una persona
-                  después de su muerte.​
+                  después de su muerte.
                 </p>
                 <div className="p-5 text-center">
                   <Link
                     href="/servicios"
-                    className="border-2 border-solid border-white p-3 transition-all hover:bg-slate-400  hover:bg-opacity-30 duration-1000"
+                    className="relative border-2 border-solid border-white p-5 hover:translate-x-6 hover:bg-slate-400 hover:bg-opacity-30 transition-all duration-300 ease-in-out before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px] before:bg-white before:scale-x-0 hover:before:scale-x-100 before:origin-left before:transition-transform before:duration-1000"
                   >
                     Saber mas
                   </Link>
