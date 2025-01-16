@@ -68,10 +68,10 @@ export default function Home() {
           </div>
           <div className="mt-52 p-1 text-center">
             <Link
-              href="/nosotros"
+              href="/agenda"
               className="relative border-2 border-solid border-black p-5 hover:translate-x-6 hover:bg-slate-400 hover:bg-opacity-30 transition-all duration-300 ease-in-out before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px] before:bg-black before:scale-x-0 hover:before:scale-x-100 before:origin-left before:transition-transform before:duration-1000"
             >
-              Saber mas
+              Agendar
             </Link>
           </div>
           <h2 className="text-center font-bold text-3xl font-sans m-8 px-4 pt-20">

@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className="bg-gray-400 text-blue-950 text-center bottom-0 w-full h-60 pt-20">
       <main className="h-2/3 flex flex-row justify-evenly justify-items-center items-end">
         <Image src={logo} alt="logo" className="my-10 p-2 h-32 w-32" />
-        <h2 className="my-20 p-1 text-xl">Artuto Umberto Ilia N°626</h2>
+        <h2 className="my-20 p-1 text-xl">Arturo Umberto Ilia N°626</h2>
         <h2 className="my-20 p-1 text-xl">telefono</h2>
         <h2 className="my-20 p-1 text-xl">estudiojuridicosura02@gmail.com</h2>
       </main>
