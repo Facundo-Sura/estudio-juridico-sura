@@ -32,9 +32,9 @@ export default function Nosotros() {
             <p className="text-center h-auto w-11/12 mx-auto p-2 border-t-2">
               Abogada, egresada de la Universidad SigloXXI de Córdoba. En
               ejercicio de la profesión desde 2018, con más de 6 años de
-              experiencia en Derecho de Familia, Civil, Laboral, Administrativo, Derechos Humanos, Derecho Internacional Público y Privado. Además cuenta
+              experiencia en Derecho de Familia, Civil, Administrativo, especialización en Daños por la UBA. Además cuenta
               con formación en Escribania, Mediación Derecho Procesal Laboral.
-              Actualmente, estudiante del Doctorado en .
+              Actualmente, estudiante en Doctorado en Derecho.
             </p>
           </div>
         </div>
