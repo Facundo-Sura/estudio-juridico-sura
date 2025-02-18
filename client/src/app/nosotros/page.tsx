@@ -40,34 +40,6 @@ export default function Nosotros() {
         </div>
 
         <div className="p-10 flex justify-center items-center">
-          <div className="m-8 p-8 shadow-2xl border-2 border-r-slate-400 rounded-3xl">
-            <h1 className="m-8 text-3xl font-bold border-b-2">Belén</h1>
-            <h2 className="m-8 text-xl">Secretaria</h2>
-            <h6 className="m-8 font-light">
-            </h6>
-            <h6 className="m-8 font-light">
-            </h6>
-            <p className="text-center h-auto w-11/12 mx-auto p-2 border-t-2">
-            </p>
-          </div>
-          <Image src={secretaria} alt="belen" className="h-96 w-64" />
-        </div>
-
-        <div className="p-10 flex justify-center items-center">
-          <div className="m-8 p-8 shadow-2xl border-2 border-r-slate-400 rounded-3xl">
-            <h1 className="m-8 text-3xl font-bold border-b-2">María de los Angeles</h1>
-            <h2 className="m-8 text-xl">Estudiante de Derecho, UNC.</h2>
-            <h6 className="m-8 font-light">
-            </h6>
-            <h6 className="m-8 font-light">
-            </h6>
-            <p className="text-center h-auto w-11/12 mx-auto p-2 border-t-2">
-            </p>
-          </div>
-          <Image src={asistente2} alt="belen" className="h-96 w-64" />
-        </div>
-
-        <div className="p-10 flex justify-center items-center">
         <Image src={asistente} alt="belen" className="h-96 w-64" />
           <div className="m-8 p-8 shadow-2xl border-2 border-r-slate-400 rounded-3xl">
             <h1 className="m-8 text-3xl font-bold border-b-2">Aldana Jazmín Rial</h1>
