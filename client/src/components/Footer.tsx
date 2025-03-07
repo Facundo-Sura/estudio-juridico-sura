@@ -9,7 +9,7 @@ export default function Footer() {
       <main className="h-2/3 flex flex-row justify-evenly justify-items-center items-end">
         <Image src={logo} alt="logo" className="my-10 p-2 h-32 w-32" />
         <h2 className="my-20 p-1 text-xl">Arturo Umberto Ilia N°626</h2>
-        <h2 className="my-20 p-1 text-xl">telefono</h2>
+        <h2 className="my-20 p-1 text-xl">telefonos: 3547 427222 - 3547 519205</h2>
         <h2 className="my-20 p-1 text-xl">estudiojuridicosura02@gmail.com</h2>
       </main>
       <hr />
